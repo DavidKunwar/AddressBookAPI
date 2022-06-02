@@ -19,20 +19,18 @@ mongoDB_Url = ''
 
 ## Endpoints
 
-### Send all data as x-www-form-urlencoded data, if not mentioned otherwise.
+### Send all data as x-www-form-urlencoded data.
 
-Login Route
-Make POST Request, send username = qwerty & password = qwerty
+#### Generate JWT Token
+
+Make GET Request
 ```
-http://localhost:3000/login
+http://localhost:3000/get-token
 ```
 Successfull will return a JWT Token.
 
 Copy the token and pass it in headers in every call to the API as 'x-access-token' header
 
-```
-http://localhost:3000/check-auth
-```
 Read all contacts, send a GET Request to below endpoint.
 
 Add a contact, send a POST Request.
