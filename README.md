@@ -10,6 +10,12 @@ Use the package manager NPM or YARN to install dependencies.
 npm install
 ```
 
+## Run the Server
+
+```
+node server.js
+```
+
 ## Usage
 
 ```
