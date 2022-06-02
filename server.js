@@ -75,18 +75,14 @@ class Server{
         //A local copy Address Model object
         const Address = this.Address
         
-        app.post('/login', function(req, res){
-            if(req.body.username === 'qwerty' && req.body.password === 'qwerty'){
-                //creating a JWT token, Keeping payload and secret key basic and visible for the simplicity of this assignment
-                const token = jwt.sign({payload: 'payload'}, 'jwtsecret', {
-                    expiresIn: 300,
-                })
+        app.get('/get-token', function(req, res){
+            //creating a JWT token, Keeping payload and secret key basic and visible for the simplicity of this assignment
+            const token = jwt.sign({payload: 'payload'}, 'jwtsecret', {
+                expiresIn: 600,
+            })
 
-                //Sending JWT token to client
-                res.send({message: 'You are Authorized to access this API', authToken : token})
-            }else{
-                res.send('Invalid Username/Password')
-            }
+            //Sending JWT token to client
+            res.send({message: 'Token expires in 10 minutes', authToken : token})
         })
 
         //Check if user is authenticated
