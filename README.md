@@ -26,7 +26,13 @@ Make POST Request, send username = qwerty & password = qwerty
 ```
 http://localhost:3000/login
 ```
+Successfull will return a JWT Token.
 
+Copy the token and pass it in headers in every call to the API as 'x-access-token' header
+
+```
+http://localhost:3000/check-auth
+```
 Read all contacts, send a GET Request to below endpoint.
 
 Add a contact, send a POST Request.
@@ -35,10 +41,13 @@ Delete all contacts, send a DELETE Request.
 ```
 http://localhost:3000/address-book
 ```
-Read a specific contact, send a GET Request to below endpoint
-Update a specified contact, send a PATCH Request
-Delete a specific contact, send a DELETE Request
-Add person name and contact number as url parameters
+Read a specific contact, send a GET Request to below endpoint.
+
+Update a specified contact, send a PATCH Request.
+
+Delete a specific contact, send a DELETE Request.
+
+Add person name and contact number as url parameters.
 ```
 http://localhost:3000/address-book/:personName/:contactNumber
 ```
