@@ -17,7 +17,7 @@ npm install
 mongoDB_Url = ''
 ```
 
-##Endpoints
+#Endpoints
 
 Send all data as x-www-form-urlencoded data, if not mentioned otherwise.
 
