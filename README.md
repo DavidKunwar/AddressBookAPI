@@ -27,9 +27,9 @@ Make GET Request
 ```
 http://localhost:3000/get-token
 ```
-Successfull will return a JWT Token.
 
 Copy the token and pass it in headers in every call to the API as 'x-access-token' header
+
 
 Read all contacts, send a GET Request to below endpoint.
 
