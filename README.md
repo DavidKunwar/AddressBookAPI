@@ -27,9 +27,11 @@ Make POST Request, send username = qwerty & password = qwerty
 http://localhost:3000/login
 ```
 
-Read all contacts, send a GET Request to below endpoint
-Add a contact, send a POST Request
-Delete all contacts, send a DELETE Request
+Read all contacts, send a GET Request to below endpoint.
+
+Add a contact, send a POST Request.
+
+Delete all contacts, send a DELETE Request.
 ```
 http://localhost:3000/address-book
 ```
