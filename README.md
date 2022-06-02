@@ -1,34 +1,40 @@
-# Foobar
+# Vouch Digital - ADDRESS BOOK
 
-Foobar is a Python library for dealing with word pluralization.
+Address Book RESTfull API
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the package manager NPM or YARN to install dependencies.
 
 ```bash
-pip install foobar
+npm install
 ```
 
 ## Usage
 
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
+```
+# Add your own MongoDB connection url in mongoDB_Url
+mongoDB_Url = ''
 ```
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+##Endpoints
 
-Please make sure to update tests as appropriate.
+```
+# Send all data as x-www-form-urlencoded data, if not mentioned otherwise.
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+# Login Route
+# Make POST Request, send username = qwerty & password = qwerty
+http://localhost:3000/login
+
+
+# Read all contacts, send a GET Request to below endpoint
+# Add a contact, send a POST Request
+# Delete all contacts, send a DELETE Request
+http://localhost:3000/address-book
+
+# Read a specific contact, send a GET Request to below endpoint
+# Update a specified contact, send a PATCH Request
+# Delete a specific contact, send a DELETE Request
+# Add person name and contact number as url parameters
+http://localhost:3000/address-book/:personName/:contactNumber
+```
