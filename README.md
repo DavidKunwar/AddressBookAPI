@@ -1,4 +1,4 @@
-# Vouch Digital - ADDRESS BOOK
+# ADDRESS BOOK
 
 Address Book RESTfull API
 
